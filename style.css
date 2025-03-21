@@ -70,7 +70,7 @@
 }
 
 .carousel-caption{
-    bottom:40%;
+    margin-bottom:25%;
 }
 
 .hero{
@@ -137,4 +137,86 @@ section#people .card i{
 
 section#people .card i:hover{
 opacity:0.5;
+}
+
+/** OUR MENU */
+
+section#menu{
+    background-color:var(--secondary-color);
+  
+}
+
+section#menu .menu-header{
+    color:var(--primary-color)
+}
+
+section#menu .container{
+    background-color: var(--primary-color);
+}
+
+section#menu button{
+    background-color: var(--secondary-color);
+    margin-right: 1rem;
+}
+
+/** ABOUT */
+
+section#about{
+    background-color:var(--secondary-color) ;
+    color:white;
+
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.about-info{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+   background-image:linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(188, 108, 37,0.5))
+}
+
+section#about .btn{
+    background-color: var(--primary-color);
+}
+
+
+/** CONTACT */
+
+section#contact{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(188, 108, 37,0.5)) , url("./img/slider2.jpg") ;
+}
+section#contact input,
+section#contact textarea{
+    background-color: inherit;
+}
+section#contact input:focus,
+section#contact textarea:focus{
+    background-color: var(--primary-color)
+}
+
+label{
+    color:white;
+}
+
+input::placeholder{
+    color:white !important;
+}
+
+textarea{
+    resize:none;
+    height: 100px !important;
+}
+
+.google-map{
+    filter:grayscale(100%);
+    border-radius:1.5rem;
 }
